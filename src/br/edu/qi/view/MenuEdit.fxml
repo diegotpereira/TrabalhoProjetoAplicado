@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" stylesheets="@css/Geral.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.qi.controller.ControllerMenu">
+   <left>
+      <VBox prefWidth="180.0" styleClass="menu-lateral" BorderPane.alignment="CENTER">
+         <children>
+            <Label disable="true" text="Menu">
+                
+                <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                    
+                </Label>
+            
+            
+            
+            
+            <HBox onMouseClicked="#abrirClientes" spacing="5.0" styleClass="menu-item">
+              <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+               <children>
+                  <Label text="Clientes" />
+               </children>
+            </HBox>
+           
+
+
+            <HBox onMouseClicked="#abrirInstituição" spacing="5.0" styleClass="menu-item">
+               <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+               <children>
+                  <Label text="Instituição" />
+               </children>
+            </HBox>
+           
+
+            <HBox onMouseClicked="#abrirRefeições" spacing="5.0" styleClass="menu-item">
+               <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+               <children>
+                  <Label text="Refeição" />
+               </children>
+            </HBox>
+            
+            
+            
+             <HBox onMouseClicked="#abrirEmail" spacing="5.0" styleClass="menu-item">
+                    <children>
+                       
+                        <Label text="Notificar" />
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+                </HBox>
+        
+
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TabPane fx:id="tabPane" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
+
